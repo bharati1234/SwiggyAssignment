@@ -23,6 +23,8 @@
 		58C590BF2D04D971008B3C95 /* FoodTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590BD2D04D971008B3C95 /* FoodTypeTableViewCell.xib */; };
 		58C590C22D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590C02D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift */; };
 		58C590C32D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590C12D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib */; };
+		58C590CA2D04EA24008B3C95 /* QuickPicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590C82D04EA24008B3C95 /* QuickPicsTableViewCell.swift */; };
+		58C590CB2D04EA24008B3C95 /* QuickPicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590C92D04EA24008B3C95 /* QuickPicsTableViewCell.xib */; };
 		58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */; };
 		58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */; };
 		58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */; };
@@ -63,6 +65,8 @@
 		58C590BD2D04D971008B3C95 /* FoodTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTypeTableViewCell.xib; sourceTree = "<group>"; };
 		58C590C02D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		58C590C12D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		58C590C82D04EA24008B3C95 /* QuickPicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPicsTableViewCell.swift; sourceTree = "<group>"; };
+		58C590C92D04EA24008B3C95 /* QuickPicsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickPicsTableViewCell.xib; sourceTree = "<group>"; };
 		58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarWithMic.swift; sourceTree = "<group>"; };
 		58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				58C590B02D04CBD4008B3C95 /* OfferTableViewCell.xib */,
 				58C590BC2D04D971008B3C95 /* FoodTypeTableViewCell.swift */,
 				58C590BD2D04D971008B3C95 /* FoodTypeTableViewCell.xib */,
+				58C590C82D04EA24008B3C95 /* QuickPicsTableViewCell.swift */,
+				58C590C92D04EA24008B3C95 /* QuickPicsTableViewCell.xib */,
 			);
 			path = CustomTVCells;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C590CB2D04EA24008B3C95 /* QuickPicsTableViewCell.xib in Resources */,
 				58C590C32D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib in Resources */,
 				58C590B62D04CC5F008B3C95 /* OfferCollectionViewCell.xib in Resources */,
 				58DFD8642D04779C00112FA4 /* bannerSliderTableViewCell.xib in Resources */,
@@ -296,6 +303,7 @@
 				58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */,
 				328171742D033E55000D8938 /* HomeViewController.swift in Sources */,
 				58DFD87C2D04A58900112FA4 /* FoodCollectionViewCell.swift in Sources */,
+				58C590CA2D04EA24008B3C95 /* QuickPicsTableViewCell.swift in Sources */,
 				58DFD8632D04779C00112FA4 /* bannerSliderTableViewCell.swift in Sources */,
 				58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */,
 				58C590BE2D04D971008B3C95 /* FoodTypeTableViewCell.swift in Sources */,

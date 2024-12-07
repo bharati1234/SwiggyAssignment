@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: "FoodTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodTableViewCell")
         tableView.register(UINib(nibName: "OfferTableViewCell", bundle: nil), forCellReuseIdentifier: "OfferTableViewCell")
         tableView.register(UINib(nibName: "FoodTypeTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodTypeTableViewCell")
+        tableView.register(UINib(nibName: "QuickPicsTableViewCell", bundle: nil), forCellReuseIdentifier: "QuickPicsTableViewCell")
 
     }
 }
@@ -33,24 +34,14 @@ class HomeViewController: UIViewController {
    
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return 7
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 0
-        } else if section == 1 {
-            return 1
-        }else if section == 2{
-            return 1
-        }else if section == 3{
-            return 1
-        }else if section == 4{
-            return 1
-        }else  if section == 5{
-            return 1
         }
-        return 10
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,6 +72,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             }
             cell.lblSectionTitle.isHidden = false
             return cell
+        }else if indexPath.section == 6{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "QuickPicsTableViewCell", for: indexPath) as? QuickPicsTableViewCell else {
+                return UITableViewCell()
+            }
+           
+            return cell
         }
       
            
@@ -108,13 +105,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             if indexPath.section == 1 {
                 return 200
             }else if indexPath.section == 2{
-                return 60
+                return 80
             }else if indexPath.section == 3{
                 return 273
             }else if indexPath.section == 4{
                 return 200
             }else if indexPath.section == 5{
-            return 250
+            return 260
+        }else if indexPath.section == 6{
+            return 90
         }
             return UITableView.automaticDimension
         }
