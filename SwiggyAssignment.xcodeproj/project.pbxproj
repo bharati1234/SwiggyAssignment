@@ -27,6 +27,10 @@
 		58DFD8712D048C2D00112FA4 /* ButtonsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD86F2D048C2D00112FA4 /* ButtonsCollectionViewCell.xib */; };
 		58DFD8732D048E0900112FA4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8722D048E0900112FA4 /* CustomButton.swift */; };
 		58DFD8752D04915E00112FA4 /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8742D04915E00112FA4 /* ButtonModel.swift */; };
+		58DFD8782D04A51700112FA4 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8762D04A51700112FA4 /* FoodTableViewCell.swift */; };
+		58DFD8792D04A51700112FA4 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD8772D04A51700112FA4 /* FoodTableViewCell.xib */; };
+		58DFD87C2D04A58900112FA4 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD87A2D04A58900112FA4 /* FoodCollectionViewCell.swift */; };
+		58DFD87D2D04A58900112FA4 /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD87B2D04A58900112FA4 /* FoodCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		58DFD86F2D048C2D00112FA4 /* ButtonsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsCollectionViewCell.xib; sourceTree = "<group>"; };
 		58DFD8722D048E0900112FA4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		58DFD8742D04915E00112FA4 /* ButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
+		58DFD8762D04A51700112FA4 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		58DFD8772D04A51700112FA4 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		58DFD87A2D04A58900112FA4 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		58DFD87B2D04A58900112FA4 /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,8 @@
 				58DFD8622D04779C00112FA4 /* bannerSliderTableViewCell.xib */,
 				58DFD86A2D048BBE00112FA4 /* ButtonsTableViewCell.swift */,
 				58DFD86B2D048BBE00112FA4 /* ButtonsTableViewCell.xib */,
+				58DFD8762D04A51700112FA4 /* FoodTableViewCell.swift */,
+				58DFD8772D04A51700112FA4 /* FoodTableViewCell.xib */,
 			);
 			path = CustomTVCells;
 			sourceTree = "<group>";
@@ -151,6 +161,8 @@
 				58DFD8672D047DBF00112FA4 /* BannerCollectionViewCell.xib */,
 				58DFD86E2D048C2D00112FA4 /* ButtonsCollectionViewCell.swift */,
 				58DFD86F2D048C2D00112FA4 /* ButtonsCollectionViewCell.xib */,
+				58DFD87A2D04A58900112FA4 /* FoodCollectionViewCell.swift */,
+				58DFD87B2D04A58900112FA4 /* FoodCollectionViewCell.xib */,
 			);
 			path = CustomCVCells;
 			sourceTree = "<group>";
@@ -220,8 +232,10 @@
 				58DFD86D2D048BBE00112FA4 /* ButtonsTableViewCell.xib in Resources */,
 				3281717C2D033E56000D8938 /* Base in Resources */,
 				58DFD85F2D04674500112FA4 /* LaunchScreen.storyboard in Resources */,
+				58DFD8792D04A51700112FA4 /* FoodTableViewCell.xib in Resources */,
 				58DFD8692D047DBF00112FA4 /* BannerCollectionViewCell.xib in Resources */,
 				328171772D033E55000D8938 /* Base in Resources */,
+				58DFD87D2D04A58900112FA4 /* FoodCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +249,10 @@
 				58DFD8752D04915E00112FA4 /* ButtonModel.swift in Sources */,
 				58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */,
 				328171742D033E55000D8938 /* HomeViewController.swift in Sources */,
+				58DFD87C2D04A58900112FA4 /* FoodCollectionViewCell.swift in Sources */,
 				58DFD8632D04779C00112FA4 /* bannerSliderTableViewCell.swift in Sources */,
 				58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */,
+				58DFD8782D04A51700112FA4 /* FoodTableViewCell.swift in Sources */,
 				58DFD8732D048E0900112FA4 /* CustomButton.swift in Sources */,
 				58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */,
 				328171702D033E55000D8938 /* AppDelegate.swift in Sources */,

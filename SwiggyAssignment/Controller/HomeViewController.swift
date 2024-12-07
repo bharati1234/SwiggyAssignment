@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.register(UINib(nibName: "bannerSliderTableViewCell", bundle: nil), forCellReuseIdentifier: "bannerSliderTableViewCell")
         tableView.register(UINib(nibName: "ButtonsTableViewCell", bundle: nil), forCellReuseIdentifier: "ButtonsTableViewCell")
+        tableView.register(UINib(nibName: "FoodTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodTableViewCell")
 
     }
 }
@@ -40,6 +41,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                    return 1
         }else if section == 2{
             return 1
+        }else if section == 3{
+            return 1
         }
         return 10
     }
@@ -53,6 +56,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     return cell
         }else if indexPath.section == 2{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonsTableViewCell", for: indexPath) as? ButtonsTableViewCell else {
+                return UITableViewCell()
+            }
+            return cell
+        }else if indexPath.section == 3{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "FoodTableViewCell", for: indexPath) as? FoodTableViewCell else {
                 return UITableViewCell()
             }
             return cell
@@ -82,7 +90,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 return 200
             }else if indexPath.section == 2{
                 return 60
-                
+            }else if indexPath.section == 3{
+                return 350
             }
             return UITableView.automaticDimension
         }
