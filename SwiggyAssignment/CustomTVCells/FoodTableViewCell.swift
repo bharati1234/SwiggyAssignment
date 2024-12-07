@@ -11,10 +11,9 @@ class FoodTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var foodItems: [FoodItem] = []
-      
-      override func awakeFromNib() {
+    
+    override func awakeFromNib() {
           super.awakeFromNib()
-          
           collectionView.register(UINib(nibName: "FoodCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FoodCollectionViewCell")
           
           collectionView.dataSource = self

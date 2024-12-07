@@ -32,9 +32,15 @@
                 <constraints>
                     <constraint firstItem="YRc-1v-cof" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B27-g0-Nuy"/>
                     <constraint firstAttribute="bottom" secondItem="YRc-1v-cof" secondAttribute="bottom" id="DId-e2-CWs"/>
+                    <constraint firstItem="YRc-1v-cof" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QfD-cN-bAR"/>
                     <constraint firstAttribute="trailing" secondItem="YRc-1v-cof" secondAttribute="trailing" id="TKT-QX-Xeo"/>
                     <constraint firstItem="YRc-1v-cof" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bjd-OQ-Gqf"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="bjd-OQ-Gqf"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>

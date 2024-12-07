@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: "bannerSliderTableViewCell", bundle: nil), forCellReuseIdentifier: "bannerSliderTableViewCell")
         tableView.register(UINib(nibName: "ButtonsTableViewCell", bundle: nil), forCellReuseIdentifier: "ButtonsTableViewCell")
         tableView.register(UINib(nibName: "FoodTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodTableViewCell")
+        tableView.register(UINib(nibName: "OfferTableViewCell", bundle: nil), forCellReuseIdentifier: "OfferTableViewCell")
+        tableView.register(UINib(nibName: "FoodTypeTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodTypeTableViewCell")
 
     }
 }
@@ -31,17 +33,21 @@ class HomeViewController: UIViewController {
    
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 6
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-                   return 0
+            return 0
         } else if section == 1 {
-                   return 1
+            return 1
         }else if section == 2{
             return 1
         }else if section == 3{
+            return 1
+        }else if section == 4{
+            return 1
+        }else  if section == 5{
             return 1
         }
         return 10
@@ -64,7 +70,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             return cell
+        }else if indexPath.section == 4{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "OfferTableViewCell", for: indexPath) as? OfferTableViewCell else {
+                return UITableViewCell()
+            }
+            return cell
+        }else if indexPath.section == 5{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "FoodTypeTableViewCell", for: indexPath) as? FoodTypeTableViewCell else {
+                return UITableViewCell()
+            }
+            cell.lblSectionTitle.isHidden = false
+            return cell
         }
+      
+           
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Row \(indexPath.row)"
         return cell
@@ -92,7 +111,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 return 60
             }else if indexPath.section == 3{
                 return 273
-            }
+            }else if indexPath.section == 4{
+                return 200
+            }else if indexPath.section == 5{
+            return 250
+        }
             return UITableView.automaticDimension
         }
 }

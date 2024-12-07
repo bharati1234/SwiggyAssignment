@@ -13,6 +13,16 @@
 		328171772D033E55000D8938 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 328171762D033E55000D8938 /* Base */; };
 		328171792D033E56000D8938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328171782D033E56000D8938 /* Assets.xcassets */; };
 		3281717C2D033E56000D8938 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3281717B2D033E56000D8938 /* Base */; };
+		58C590B12D04CBD4008B3C95 /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590AF2D04CBD4008B3C95 /* OfferTableViewCell.swift */; };
+		58C590B22D04CBD4008B3C95 /* OfferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590B02D04CBD4008B3C95 /* OfferTableViewCell.xib */; };
+		58C590B52D04CC5F008B3C95 /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590B32D04CC5F008B3C95 /* OfferCollectionViewCell.swift */; };
+		58C590B62D04CC5F008B3C95 /* OfferCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590B42D04CC5F008B3C95 /* OfferCollectionViewCell.xib */; };
+		58C590B82D04CD81008B3C95 /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590B72D04CD81008B3C95 /* OfferModel.swift */; };
+		58C590BB2D04CF64008B3C95 /* Extension + UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590BA2D04CF64008B3C95 /* Extension + UIImage.swift */; };
+		58C590BE2D04D971008B3C95 /* FoodTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590BC2D04D971008B3C95 /* FoodTypeTableViewCell.swift */; };
+		58C590BF2D04D971008B3C95 /* FoodTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590BD2D04D971008B3C95 /* FoodTypeTableViewCell.xib */; };
+		58C590C22D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590C02D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift */; };
+		58C590C32D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590C12D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib */; };
 		58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */; };
 		58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */; };
 		58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */; };
@@ -43,6 +53,16 @@
 		328171782D033E56000D8938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3281717B2D033E56000D8938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3281717D2D033E56000D8938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58C590AF2D04CBD4008B3C95 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
+		58C590B02D04CBD4008B3C95 /* OfferTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferTableViewCell.xib; sourceTree = "<group>"; };
+		58C590B32D04CC5F008B3C95 /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
+		58C590B42D04CC5F008B3C95 /* OfferCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferCollectionViewCell.xib; sourceTree = "<group>"; };
+		58C590B72D04CD81008B3C95 /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
+		58C590BA2D04CF64008B3C95 /* Extension + UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIImage.swift"; sourceTree = "<group>"; };
+		58C590BC2D04D971008B3C95 /* FoodTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeTableViewCell.swift; sourceTree = "<group>"; };
+		58C590BD2D04D971008B3C95 /* FoodTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTypeTableViewCell.xib; sourceTree = "<group>"; };
+		58C590C02D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		58C590C12D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarWithMic.swift; sourceTree = "<group>"; };
 		58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
@@ -113,6 +133,7 @@
 			children = (
 				58DFD8742D04915E00112FA4 /* ButtonModel.swift */,
 				58E235242D04BFF4009DF376 /* FoodItemModel.swift */,
+				58C590B72D04CD81008B3C95 /* OfferModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,9 +154,18 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		58C590B92D04CF35008B3C95 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				58C590BA2D04CF64008B3C95 /* Extension + UIImage.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		58DFD8562D045FC000112FA4 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				58C590B92D04CF35008B3C95 /* New Group */,
 				58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */,
 				58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */,
 				58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */,
@@ -153,6 +183,10 @@
 				58DFD86B2D048BBE00112FA4 /* ButtonsTableViewCell.xib */,
 				58DFD8762D04A51700112FA4 /* FoodTableViewCell.swift */,
 				58DFD8772D04A51700112FA4 /* FoodTableViewCell.xib */,
+				58C590AF2D04CBD4008B3C95 /* OfferTableViewCell.swift */,
+				58C590B02D04CBD4008B3C95 /* OfferTableViewCell.xib */,
+				58C590BC2D04D971008B3C95 /* FoodTypeTableViewCell.swift */,
+				58C590BD2D04D971008B3C95 /* FoodTypeTableViewCell.xib */,
 			);
 			path = CustomTVCells;
 			sourceTree = "<group>";
@@ -166,6 +200,10 @@
 				58DFD86F2D048C2D00112FA4 /* ButtonsCollectionViewCell.xib */,
 				58DFD87A2D04A58900112FA4 /* FoodCollectionViewCell.swift */,
 				58DFD87B2D04A58900112FA4 /* FoodCollectionViewCell.xib */,
+				58C590B32D04CC5F008B3C95 /* OfferCollectionViewCell.swift */,
+				58C590B42D04CC5F008B3C95 /* OfferCollectionViewCell.xib */,
+				58C590C02D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift */,
+				58C590C12D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib */,
 			);
 			path = CustomCVCells;
 			sourceTree = "<group>";
@@ -228,10 +266,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C590C32D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib in Resources */,
+				58C590B62D04CC5F008B3C95 /* OfferCollectionViewCell.xib in Resources */,
 				58DFD8642D04779C00112FA4 /* bannerSliderTableViewCell.xib in Resources */,
 				58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */,
 				328171792D033E56000D8938 /* Assets.xcassets in Resources */,
 				58DFD8712D048C2D00112FA4 /* ButtonsCollectionViewCell.xib in Resources */,
+				58C590BF2D04D971008B3C95 /* FoodTypeTableViewCell.xib in Resources */,
+				58C590B22D04CBD4008B3C95 /* OfferTableViewCell.xib in Resources */,
 				58DFD86D2D048BBE00112FA4 /* ButtonsTableViewCell.xib in Resources */,
 				3281717C2D033E56000D8938 /* Base in Resources */,
 				58DFD85F2D04674500112FA4 /* LaunchScreen.storyboard in Resources */,
@@ -250,14 +292,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				58DFD8752D04915E00112FA4 /* ButtonModel.swift in Sources */,
+				58C590B52D04CC5F008B3C95 /* OfferCollectionViewCell.swift in Sources */,
 				58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */,
 				328171742D033E55000D8938 /* HomeViewController.swift in Sources */,
 				58DFD87C2D04A58900112FA4 /* FoodCollectionViewCell.swift in Sources */,
 				58DFD8632D04779C00112FA4 /* bannerSliderTableViewCell.swift in Sources */,
 				58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */,
+				58C590BE2D04D971008B3C95 /* FoodTypeTableViewCell.swift in Sources */,
+				58C590C22D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift in Sources */,
+				58C590B12D04CBD4008B3C95 /* OfferTableViewCell.swift in Sources */,
 				58DFD8782D04A51700112FA4 /* FoodTableViewCell.swift in Sources */,
+				58C590BB2D04CF64008B3C95 /* Extension + UIImage.swift in Sources */,
 				58DFD8732D048E0900112FA4 /* CustomButton.swift in Sources */,
 				58E235252D04BFF4009DF376 /* FoodItemModel.swift in Sources */,
+				58C590B82D04CD81008B3C95 /* OfferModel.swift in Sources */,
 				58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */,
 				328171702D033E55000D8938 /* AppDelegate.swift in Sources */,
 				328171722D033E55000D8938 /* SceneDelegate.swift in Sources */,
