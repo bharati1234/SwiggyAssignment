@@ -91,7 +91,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             }else if indexPath.section == 2{
                 return 60
             }else if indexPath.section == 3{
-                return 350
+                return 273
             }
             return UITableView.automaticDimension
         }

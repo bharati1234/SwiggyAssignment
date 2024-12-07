@@ -31,6 +31,7 @@
 		58DFD8792D04A51700112FA4 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD8772D04A51700112FA4 /* FoodTableViewCell.xib */; };
 		58DFD87C2D04A58900112FA4 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD87A2D04A58900112FA4 /* FoodCollectionViewCell.swift */; };
 		58DFD87D2D04A58900112FA4 /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD87B2D04A58900112FA4 /* FoodCollectionViewCell.xib */; };
+		58E235252D04BFF4009DF376 /* FoodItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E235242D04BFF4009DF376 /* FoodItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		58DFD8772D04A51700112FA4 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
 		58DFD87A2D04A58900112FA4 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		58DFD87B2D04A58900112FA4 /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		58E235242D04BFF4009DF376 /* FoodItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				58DFD8742D04915E00112FA4 /* ButtonModel.swift */,
+				58E235242D04BFF4009DF376 /* FoodItemModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */,
 				58DFD8782D04A51700112FA4 /* FoodTableViewCell.swift in Sources */,
 				58DFD8732D048E0900112FA4 /* CustomButton.swift in Sources */,
+				58E235252D04BFF4009DF376 /* FoodItemModel.swift in Sources */,
 				58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */,
 				328171702D033E55000D8938 /* AppDelegate.swift in Sources */,
 				328171722D033E55000D8938 /* SceneDelegate.swift in Sources */,
