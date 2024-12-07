@@ -19,10 +19,10 @@ class HomeViewController: UIViewController {
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.register(UINib(nibName: "CustomHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: CustomHeaderView.identifier)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.register(UINib(nibName: "bannerSliderTableViewCell", bundle: nil), forCellReuseIdentifier: "bannerSliderTableViewCell")
+        tableView.register(UINib(nibName: "ButtonsTableViewCell", bundle: nil), forCellReuseIdentifier: "ButtonsTableViewCell")
 
     }
 }
@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
    
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +38,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                    return 0
         } else if section == 1 {
                    return 1
+        }else if section == 2{
+            return 1
         }
         return 10
     }
@@ -49,7 +51,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                         return UITableViewCell()
                     }
                     return cell
-                }
+        }else if indexPath.section == 2{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonsTableViewCell", for: indexPath) as? ButtonsTableViewCell else {
+                return UITableViewCell()
+            }
+            return cell
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Row \(indexPath.row)"
         return cell
@@ -73,6 +80,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             if indexPath.section == 1 {
                 return 200
+            }else if indexPath.section == 2{
+                return 60
+                
             }
             return UITableView.automaticDimension
         }

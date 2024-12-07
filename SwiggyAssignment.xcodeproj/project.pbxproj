@@ -21,6 +21,12 @@
 		58DFD8642D04779C00112FA4 /* bannerSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD8622D04779C00112FA4 /* bannerSliderTableViewCell.xib */; };
 		58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8662D047DBF00112FA4 /* BannerCollectionViewCell.swift */; };
 		58DFD8692D047DBF00112FA4 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD8672D047DBF00112FA4 /* BannerCollectionViewCell.xib */; };
+		58DFD86C2D048BBE00112FA4 /* ButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD86A2D048BBE00112FA4 /* ButtonsTableViewCell.swift */; };
+		58DFD86D2D048BBE00112FA4 /* ButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD86B2D048BBE00112FA4 /* ButtonsTableViewCell.xib */; };
+		58DFD8702D048C2D00112FA4 /* ButtonsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD86E2D048C2D00112FA4 /* ButtonsCollectionViewCell.swift */; };
+		58DFD8712D048C2D00112FA4 /* ButtonsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD86F2D048C2D00112FA4 /* ButtonsCollectionViewCell.xib */; };
+		58DFD8732D048E0900112FA4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8722D048E0900112FA4 /* CustomButton.swift */; };
+		58DFD8752D04915E00112FA4 /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8742D04915E00112FA4 /* ButtonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,12 @@
 		58DFD8622D04779C00112FA4 /* bannerSliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bannerSliderTableViewCell.xib; sourceTree = "<group>"; };
 		58DFD8662D047DBF00112FA4 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		58DFD8672D047DBF00112FA4 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		58DFD86A2D048BBE00112FA4 /* ButtonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsTableViewCell.swift; sourceTree = "<group>"; };
+		58DFD86B2D048BBE00112FA4 /* ButtonsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsTableViewCell.xib; sourceTree = "<group>"; };
+		58DFD86E2D048C2D00112FA4 /* ButtonsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsCollectionViewCell.swift; sourceTree = "<group>"; };
+		58DFD86F2D048C2D00112FA4 /* ButtonsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsCollectionViewCell.xib; sourceTree = "<group>"; };
+		58DFD8722D048E0900112FA4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		58DFD8742D04915E00112FA4 /* ButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 		328171832D033E6A000D8938 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				58DFD8742D04915E00112FA4 /* ButtonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +128,7 @@
 				58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */,
 				58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */,
 				58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */,
+				58DFD8722D048E0900112FA4 /* CustomButton.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -124,6 +138,8 @@
 			children = (
 				58DFD8612D04779C00112FA4 /* bannerSliderTableViewCell.swift */,
 				58DFD8622D04779C00112FA4 /* bannerSliderTableViewCell.xib */,
+				58DFD86A2D048BBE00112FA4 /* ButtonsTableViewCell.swift */,
+				58DFD86B2D048BBE00112FA4 /* ButtonsTableViewCell.xib */,
 			);
 			path = CustomTVCells;
 			sourceTree = "<group>";
@@ -133,6 +149,8 @@
 			children = (
 				58DFD8662D047DBF00112FA4 /* BannerCollectionViewCell.swift */,
 				58DFD8672D047DBF00112FA4 /* BannerCollectionViewCell.xib */,
+				58DFD86E2D048C2D00112FA4 /* ButtonsCollectionViewCell.swift */,
+				58DFD86F2D048C2D00112FA4 /* ButtonsCollectionViewCell.xib */,
 			);
 			path = CustomCVCells;
 			sourceTree = "<group>";
@@ -198,6 +216,8 @@
 				58DFD8642D04779C00112FA4 /* bannerSliderTableViewCell.xib in Resources */,
 				58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */,
 				328171792D033E56000D8938 /* Assets.xcassets in Resources */,
+				58DFD8712D048C2D00112FA4 /* ButtonsCollectionViewCell.xib in Resources */,
+				58DFD86D2D048BBE00112FA4 /* ButtonsTableViewCell.xib in Resources */,
 				3281717C2D033E56000D8938 /* Base in Resources */,
 				58DFD85F2D04674500112FA4 /* LaunchScreen.storyboard in Resources */,
 				58DFD8692D047DBF00112FA4 /* BannerCollectionViewCell.xib in Resources */,
@@ -212,13 +232,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58DFD8752D04915E00112FA4 /* ButtonModel.swift in Sources */,
 				58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */,
 				328171742D033E55000D8938 /* HomeViewController.swift in Sources */,
 				58DFD8632D04779C00112FA4 /* bannerSliderTableViewCell.swift in Sources */,
 				58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */,
+				58DFD8732D048E0900112FA4 /* CustomButton.swift in Sources */,
 				58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */,
 				328171702D033E55000D8938 /* AppDelegate.swift in Sources */,
 				328171722D033E55000D8938 /* SceneDelegate.swift in Sources */,
+				58DFD86C2D048BBE00112FA4 /* ButtonsTableViewCell.swift in Sources */,
+				58DFD8702D048C2D00112FA4 /* ButtonsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

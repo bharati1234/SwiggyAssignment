@@ -16,5 +16,5 @@ class BannerCollectionViewCell: UICollectionViewCell {
         imageView.layer.cornerRadius = 10
         imageView.clipsToBounds = true
     }
-
+       
 }
