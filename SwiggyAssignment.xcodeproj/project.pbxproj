@@ -17,6 +17,10 @@
 		58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */; };
 		58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */; };
 		58DFD85F2D04674500112FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3281717A2D033E56000D8938 /* LaunchScreen.storyboard */; };
+		58DFD8632D04779C00112FA4 /* bannerSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8612D04779C00112FA4 /* bannerSliderTableViewCell.swift */; };
+		58DFD8642D04779C00112FA4 /* bannerSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD8622D04779C00112FA4 /* bannerSliderTableViewCell.xib */; };
+		58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8662D047DBF00112FA4 /* BannerCollectionViewCell.swift */; };
+		58DFD8692D047DBF00112FA4 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD8672D047DBF00112FA4 /* BannerCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarWithMic.swift; sourceTree = "<group>"; };
 		58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
+		58DFD8612D04779C00112FA4 /* bannerSliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerSliderTableViewCell.swift; sourceTree = "<group>"; };
+		58DFD8622D04779C00112FA4 /* bannerSliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bannerSliderTableViewCell.xib; sourceTree = "<group>"; };
+		58DFD8662D047DBF00112FA4 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		58DFD8672D047DBF00112FA4 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,8 @@
 		3281716E2D033E55000D8938 /* SwiggyAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				58DFD8652D047D9700112FA4 /* CustomCVCells */,
+				58DFD8602D04775900112FA4 /* CustomTVCells */,
 				58DFD8562D045FC000112FA4 /* Utility */,
 				328171852D033E7B000D8938 /* Controller */,
 				328171842D033E75000D8938 /* View */,
@@ -107,6 +117,24 @@
 				58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		58DFD8602D04775900112FA4 /* CustomTVCells */ = {
+			isa = PBXGroup;
+			children = (
+				58DFD8612D04779C00112FA4 /* bannerSliderTableViewCell.swift */,
+				58DFD8622D04779C00112FA4 /* bannerSliderTableViewCell.xib */,
+			);
+			path = CustomTVCells;
+			sourceTree = "<group>";
+		};
+		58DFD8652D047D9700112FA4 /* CustomCVCells */ = {
+			isa = PBXGroup;
+			children = (
+				58DFD8662D047DBF00112FA4 /* BannerCollectionViewCell.swift */,
+				58DFD8672D047DBF00112FA4 /* BannerCollectionViewCell.xib */,
+			);
+			path = CustomCVCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +195,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58DFD8642D04779C00112FA4 /* bannerSliderTableViewCell.xib in Resources */,
 				58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */,
 				328171792D033E56000D8938 /* Assets.xcassets in Resources */,
 				3281717C2D033E56000D8938 /* Base in Resources */,
 				58DFD85F2D04674500112FA4 /* LaunchScreen.storyboard in Resources */,
+				58DFD8692D047DBF00112FA4 /* BannerCollectionViewCell.xib in Resources */,
 				328171772D033E55000D8938 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +214,8 @@
 			files = (
 				58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */,
 				328171742D033E55000D8938 /* HomeViewController.swift in Sources */,
+				58DFD8632D04779C00112FA4 /* bannerSliderTableViewCell.swift in Sources */,
+				58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */,
 				58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */,
 				328171702D033E55000D8938 /* AppDelegate.swift in Sources */,
 				328171722D033E55000D8938 /* SceneDelegate.swift in Sources */,

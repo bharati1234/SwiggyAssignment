@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
         
         tableView.register(UINib(nibName: "CustomHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: CustomHeaderView.identifier)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: "bannerSliderTableViewCell", bundle: nil), forCellReuseIdentifier: "bannerSliderTableViewCell")
+
     }
 }
 
@@ -32,10 +34,22 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+                   return 0
+        } else if section == 1 {
+                   return 1
+        }
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.section == 1 { // Banner section
+                    guard let cell = tableView.dequeueReusableCell(withIdentifier: "bannerSliderTableViewCell", for: indexPath) as? bannerSliderTableViewCell else {
+                        return UITableViewCell()
+                    }
+                    return cell
+                }
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Row \(indexPath.row)"
         return cell
@@ -56,6 +70,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return section == 0 ? 150 : 0
        
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            if indexPath.section == 1 {
+                return 200
+            }
+            return UITableView.automaticDimension
+        }
 }
 
 //extension HomeViewController: UIScrollViewDelegate {
