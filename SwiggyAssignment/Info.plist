@@ -21,4 +21,7 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UILaunchScr
+	<key>UILaunchScreen</key>
+	<false/>
+</dict>
+</plist>
