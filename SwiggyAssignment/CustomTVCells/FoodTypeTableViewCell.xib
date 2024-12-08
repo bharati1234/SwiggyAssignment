@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodTypeTableViewCell" id="KGk-i7-Jjw" customClass="FoodTypeTableViewCell" customModule="SwiggyAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vl6-0O-vvC">
+                        <rect key="frame" x="0.0" y="27" width="451" height="123"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="52M-BN-dBc">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bharati , WHATS ON YOUR MIND?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orI-fY-3e3">
+                        <rect key="frame" x="10" y="0.0" width="431" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="orI-fY-3e3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6yT-6o-hnM"/>
+                    <constraint firstItem="vl6-0O-vvC" firstAttribute="top" secondItem="orI-fY-3e3" secondAttribute="bottom" constant="10" id="HBX-CZ-Tx3"/>
+                    <constraint firstItem="vl6-0O-vvC" firstAttribute="top" secondItem="orI-fY-3e3" secondAttribute="bottom" id="MT7-h9-mit"/>
+                    <constraint firstAttribute="trailing" secondItem="orI-fY-3e3" secondAttribute="trailing" constant="10" id="bQO-A3-DrJ"/>
+                    <constraint firstItem="vl6-0O-vvC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dCx-Ed-YpU"/>
+                    <constraint firstAttribute="trailing" secondItem="vl6-0O-vvC" secondAttribute="trailing" id="dJR-Z6-IAJ"/>
+                    <constraint firstItem="orI-fY-3e3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lyQ-9f-v5B"/>
+                    <constraint firstAttribute="bottom" secondItem="vl6-0O-vvC" secondAttribute="bottom" constant="10" id="p0W-cd-vTg"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="MT7-h9-mit"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="vl6-0O-vvC" id="G3g-AF-M7e"/>
+                <outlet property="lblSectionTitle" destination="orI-fY-3e3" id="QBf-wg-gFL"/>
+            </connections>
+            <point key="canvasLocation" x="-317" y="-30"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

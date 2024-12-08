@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ButtonsCollectionViewCell" id="gTV-IL-0wX" customClass="ButtonsCollectionViewCell" customModule="SwiggyAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="38"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="38"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebV-qd-NKz">
+                        <rect key="frame" x="0.0" y="0.0" width="213" height="38"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmE-40-m2M" customClass="CustomButton" customModule="SwiggyAssignment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="213" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="wEs-91-6wF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ReOrder"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pmE-40-m2M" secondAttribute="bottom" constant="10" id="6pV-6C-81Q"/>
+                            <constraint firstItem="pmE-40-m2M" firstAttribute="top" secondItem="ebV-qd-NKz" secondAttribute="top" id="DdU-6X-RrE"/>
+                            <constraint firstItem="pmE-40-m2M" firstAttribute="leading" secondItem="ebV-qd-NKz" secondAttribute="leading" id="Enc-nr-eYK"/>
+                            <constraint firstAttribute="trailing" secondItem="pmE-40-m2M" secondAttribute="trailing" id="zMA-nZ-cXw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6pV-6C-81Q"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ebV-qd-NKz" secondAttribute="trailing" id="9xu-b3-SmE"/>
+                <constraint firstAttribute="bottom" secondItem="ebV-qd-NKz" secondAttribute="bottom" id="Sc2-jz-oHV"/>
+                <constraint firstItem="ebV-qd-NKz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bsc-dc-h8r"/>
+                <constraint firstItem="ebV-qd-NKz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mEr-Xc-gZ1"/>
+            </constraints>
+            <size key="customSize" width="213" height="8"/>
+            <connections>
+                <outlet property="foodCategoryButton" destination="pmE-40-m2M" id="Qpy-cT-AJw"/>
+            </connections>
+            <point key="canvasLocation" x="-235.87786259541983" y="-30.985915492957748"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
