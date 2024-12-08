@@ -16,7 +16,8 @@ class CustomHeaderView: UITableViewHeaderFooterView {
     
     @IBOutlet weak var imgProfile: UIImageView!
     
-    @IBOutlet weak var searchBarView: SearchBarWithMic!
+    @IBOutlet weak var searchBarView: UIView!
+    
     
     static let identifier = "CustomHeaderView"
        
@@ -24,8 +25,14 @@ class CustomHeaderView: UITableViewHeaderFooterView {
            let nib = UINib(nibName: "CustomHeaderView", bundle: nil)
            guard let view = nib.instantiate(withOwner: self, options: nil).first as? CustomHeaderView else {
                fatalError("CustomHeaderView nib not found")
+               
            }
            return view
+       }
+    
+    override func awakeFromNib() {
+           super.awakeFromNib()
+        searchBarView.applyStyleToView()
        }
 
 }

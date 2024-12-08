@@ -35,6 +35,7 @@
 		58C590CA2D04EA24008B3C95 /* QuickPicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590C82D04EA24008B3C95 /* QuickPicsTableViewCell.swift */; };
 		58C590CB2D04EA24008B3C95 /* QuickPicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590C92D04EA24008B3C95 /* QuickPicsTableViewCell.xib */; };
 		58D5C2502D05BEF800B7395E /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 58D5C24F2D05BEF800B7395E /* Hero */; };
+		58D5C2522D05CFF200B7395E /* Extesnsion + UIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5C2512D05CFF200B7395E /* Extesnsion + UIVIew.swift */; };
 		58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */; };
 		58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */; };
 		58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */; };
@@ -86,6 +87,7 @@
 		58C590C12D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		58C590C82D04EA24008B3C95 /* QuickPicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPicsTableViewCell.swift; sourceTree = "<group>"; };
 		58C590C92D04EA24008B3C95 /* QuickPicsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickPicsTableViewCell.xib; sourceTree = "<group>"; };
+		58D5C2512D05CFF200B7395E /* Extesnsion + UIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extesnsion + UIVIew.swift"; sourceTree = "<group>"; };
 		58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarWithMic.swift; sourceTree = "<group>"; };
 		58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				58C590BA2D04CF64008B3C95 /* Extension + UIImage.swift */,
+				58D5C2512D05CFF200B7395E /* Extesnsion + UIVIew.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				58C590CA2D04EA24008B3C95 /* QuickPicsTableViewCell.swift in Sources */,
 				58DFD8632D04779C00112FA4 /* bannerSliderTableViewCell.swift in Sources */,
 				58AB497D2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift in Sources */,
+				58D5C2522D05CFF200B7395E /* Extesnsion + UIVIew.swift in Sources */,
 				58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */,
 				58AB49752D0557C300174745 /* SeeMoreRestaurantTableViewCell.swift in Sources */,
 				58C590BE2D04D971008B3C95 /* FoodTypeTableViewCell.swift in Sources */,

@@ -45,7 +45,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         hero.isEnabled = true
-
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     private func setupTableView() {
