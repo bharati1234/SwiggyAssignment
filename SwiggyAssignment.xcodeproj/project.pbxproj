@@ -17,6 +17,10 @@
 		58AB49722D054ADC00174745 /* WhatsNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AB49702D054ADC00174745 /* WhatsNewTableViewCell.xib */; };
 		58AB49752D0557C300174745 /* SeeMoreRestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB49732D0557C300174745 /* SeeMoreRestaurantTableViewCell.swift */; };
 		58AB49762D0557C300174745 /* SeeMoreRestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AB49742D0557C300174745 /* SeeMoreRestaurantTableViewCell.xib */; };
+		58AB49792D055BDB00174745 /* AdvertiseImgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB49772D055BDB00174745 /* AdvertiseImgeTableViewCell.swift */; };
+		58AB497A2D055BDB00174745 /* AdvertiseImgeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AB49782D055BDB00174745 /* AdvertiseImgeTableViewCell.xib */; };
+		58AB497D2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB497B2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift */; };
+		58AB497E2D0562AC00174745 /* FilterSortButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AB497C2D0562AC00174745 /* FilterSortButtonsTableViewCell.xib */; };
 		58C590B12D04CBD4008B3C95 /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590AF2D04CBD4008B3C95 /* OfferTableViewCell.swift */; };
 		58C590B22D04CBD4008B3C95 /* OfferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590B02D04CBD4008B3C95 /* OfferTableViewCell.xib */; };
 		58C590B52D04CC5F008B3C95 /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590B32D04CC5F008B3C95 /* OfferCollectionViewCell.swift */; };
@@ -63,6 +67,10 @@
 		58AB49702D054ADC00174745 /* WhatsNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatsNewTableViewCell.xib; sourceTree = "<group>"; };
 		58AB49732D0557C300174745 /* SeeMoreRestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMoreRestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		58AB49742D0557C300174745 /* SeeMoreRestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMoreRestaurantTableViewCell.xib; sourceTree = "<group>"; };
+		58AB49772D055BDB00174745 /* AdvertiseImgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertiseImgeTableViewCell.swift; sourceTree = "<group>"; };
+		58AB49782D055BDB00174745 /* AdvertiseImgeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertiseImgeTableViewCell.xib; sourceTree = "<group>"; };
+		58AB497B2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSortButtonsTableViewCell.swift; sourceTree = "<group>"; };
+		58AB497C2D0562AC00174745 /* FilterSortButtonsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterSortButtonsTableViewCell.xib; sourceTree = "<group>"; };
 		58C590AF2D04CBD4008B3C95 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
 		58C590B02D04CBD4008B3C95 /* OfferTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferTableViewCell.xib; sourceTree = "<group>"; };
 		58C590B32D04CC5F008B3C95 /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -205,6 +213,10 @@
 				58AB49702D054ADC00174745 /* WhatsNewTableViewCell.xib */,
 				58AB49732D0557C300174745 /* SeeMoreRestaurantTableViewCell.swift */,
 				58AB49742D0557C300174745 /* SeeMoreRestaurantTableViewCell.xib */,
+				58AB49772D055BDB00174745 /* AdvertiseImgeTableViewCell.swift */,
+				58AB49782D055BDB00174745 /* AdvertiseImgeTableViewCell.xib */,
+				58AB497B2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift */,
+				58AB497C2D0562AC00174745 /* FilterSortButtonsTableViewCell.xib */,
 			);
 			path = CustomTVCells;
 			sourceTree = "<group>";
@@ -287,6 +299,7 @@
 				58C590CB2D04EA24008B3C95 /* QuickPicsTableViewCell.xib in Resources */,
 				58C590C32D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib in Resources */,
 				58C590B62D04CC5F008B3C95 /* OfferCollectionViewCell.xib in Resources */,
+				58AB497E2D0562AC00174745 /* FilterSortButtonsTableViewCell.xib in Resources */,
 				58AB49762D0557C300174745 /* SeeMoreRestaurantTableViewCell.xib in Resources */,
 				58DFD8642D04779C00112FA4 /* bannerSliderTableViewCell.xib in Resources */,
 				58AB49722D054ADC00174745 /* WhatsNewTableViewCell.xib in Resources */,
@@ -294,6 +307,7 @@
 				328171792D033E56000D8938 /* Assets.xcassets in Resources */,
 				58DFD8712D048C2D00112FA4 /* ButtonsCollectionViewCell.xib in Resources */,
 				58C590BF2D04D971008B3C95 /* FoodTypeTableViewCell.xib in Resources */,
+				58AB497A2D055BDB00174745 /* AdvertiseImgeTableViewCell.xib in Resources */,
 				58C590B22D04CBD4008B3C95 /* OfferTableViewCell.xib in Resources */,
 				58DFD86D2D048BBE00112FA4 /* ButtonsTableViewCell.xib in Resources */,
 				3281717C2D033E56000D8938 /* Base in Resources */,
@@ -320,12 +334,14 @@
 				58DFD87C2D04A58900112FA4 /* FoodCollectionViewCell.swift in Sources */,
 				58C590CA2D04EA24008B3C95 /* QuickPicsTableViewCell.swift in Sources */,
 				58DFD8632D04779C00112FA4 /* bannerSliderTableViewCell.swift in Sources */,
+				58AB497D2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift in Sources */,
 				58DFD8682D047DBF00112FA4 /* BannerCollectionViewCell.swift in Sources */,
 				58AB49752D0557C300174745 /* SeeMoreRestaurantTableViewCell.swift in Sources */,
 				58C590BE2D04D971008B3C95 /* FoodTypeTableViewCell.swift in Sources */,
 				58C590C22D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift in Sources */,
 				58C590B12D04CBD4008B3C95 /* OfferTableViewCell.swift in Sources */,
 				58DFD8782D04A51700112FA4 /* FoodTableViewCell.swift in Sources */,
+				58AB49792D055BDB00174745 /* AdvertiseImgeTableViewCell.swift in Sources */,
 				58C590BB2D04CF64008B3C95 /* Extension + UIImage.swift in Sources */,
 				58DFD8732D048E0900112FA4 /* CustomButton.swift in Sources */,
 				58E235252D04BFF4009DF376 /* FoodItemModel.swift in Sources */,
