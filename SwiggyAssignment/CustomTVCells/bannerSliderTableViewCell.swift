@@ -2,7 +2,7 @@
 //  bannerSliderTableViewCell.swift
 //  SwiggyAssignment
 //
-//  Created by Sumit Aquil on 07/12/24.
+//  Created by Bharati on 07/12/24.
 //
 
 import UIKit

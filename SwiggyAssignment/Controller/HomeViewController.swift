@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: "OfferTableViewCell", bundle: nil), forCellReuseIdentifier: "OfferTableViewCell")
         tableView.register(UINib(nibName: "FoodTypeTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodTypeTableViewCell")
         tableView.register(UINib(nibName: "QuickPicsTableViewCell", bundle: nil), forCellReuseIdentifier: "QuickPicsTableViewCell")
+        tableView.register(UINib(nibName: "WhatsNewTableViewCell", bundle: nil), forCellReuseIdentifier: "WhatsNewTableViewCell")
 
     }
 }
@@ -34,7 +35,7 @@ class HomeViewController: UIViewController {
    
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 7
+        return 8
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,8 +77,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "QuickPicsTableViewCell", for: indexPath) as? QuickPicsTableViewCell else {
                 return UITableViewCell()
             }
-           
+            
             return cell
+        }else if indexPath.section == 7{
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "WhatsNewTableViewCell", for: indexPath) as? WhatsNewTableViewCell else {
+                    return UITableViewCell()
+                }
+               
+                return cell
         }
       
            
@@ -114,6 +121,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 260
         }else if indexPath.section == 6{
             return 90
+        }else if indexPath.section == 7{
+            return 520
         }
             return UITableView.automaticDimension
         }

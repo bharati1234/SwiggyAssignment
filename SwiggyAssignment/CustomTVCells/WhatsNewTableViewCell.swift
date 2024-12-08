@@ -1,15 +1,16 @@
 //
-//  FoodTableViewCell.swift
+//  WhatsNewTableViewCell.swift
 //  SwiggyAssignment
 //
-//  Created by Bharati on 07/12/24.
+//  Created by Bharati on 08/12/24.
 //
 
 import UIKit
 
-class FoodTableViewCell: UITableViewCell {
-
+class WhatsNewTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var foodItems: [FoodItem] = []
     
     override func awakeFromNib() {
@@ -45,19 +46,23 @@ class FoodTableViewCell: UITableViewCell {
       
       func setupCollectionViewFlowLayout() {
           if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-              flowLayout.itemSize = CGSize(width: 145, height: 260)
-              flowLayout.minimumInteritemSpacing = 10
-              flowLayout.minimumLineSpacing = 10
+                let collectionViewHeight = collectionView.bounds.height
+              print("collectionViewHeight",collectionViewHeight)
+                let itemHeight = (collectionViewHeight - 20) / 2
+                      
+                flowLayout.itemSize = CGSize(width: 145, height: itemHeight)
               collectionView.isScrollEnabled = true
               collectionView.isPagingEnabled = false
             collectionView.showsHorizontalScrollIndicator = false
               flowLayout.scrollDirection = .horizontal
+              flowLayout.minimumInteritemSpacing = 10
+              flowLayout.minimumLineSpacing = 10
           }
       }
   }
 
   // MARK: - UICollectionView DataSource
-  extension FoodTableViewCell: UICollectionViewDataSource {
+  extension WhatsNewTableViewCell: UICollectionViewDataSource {
       func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
           return foodItems.count
       }
@@ -75,7 +80,7 @@ class FoodTableViewCell: UITableViewCell {
   }
 
   // MARK: - UICollectionView Delegate
-  extension FoodTableViewCell: UICollectionViewDelegate {
+  extension WhatsNewTableViewCell: UICollectionViewDelegate {
       func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
           print("Food item at index \(indexPath.row) tapped: \(foodItems[indexPath.row])")
       }
