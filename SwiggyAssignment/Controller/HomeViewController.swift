@@ -28,14 +28,15 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: "FoodTypeTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodTypeTableViewCell")
         tableView.register(UINib(nibName: "QuickPicsTableViewCell", bundle: nil), forCellReuseIdentifier: "QuickPicsTableViewCell")
         tableView.register(UINib(nibName: "WhatsNewTableViewCell", bundle: nil), forCellReuseIdentifier: "WhatsNewTableViewCell")
+        tableView.register(UINib(nibName: "SeeMoreRestaurantTableViewCell", bundle: nil), forCellReuseIdentifier: "SeeMoreRestaurantTableViewCell")
 
     }
 }
 
-   
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 8
+        return 9
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,9 +84,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "WhatsNewTableViewCell", for: indexPath) as? WhatsNewTableViewCell else {
                     return UITableViewCell()
                 }
-               
                 return cell
-        }
+        }else if indexPath.section == 8{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SeeMoreRestaurantTableViewCell", for: indexPath) as? SeeMoreRestaurantTableViewCell else {
+                return UITableViewCell()
+            }
+            return cell
+    }
       
            
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -123,6 +128,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 90
         }else if indexPath.section == 7{
             return 520
+        }else if indexPath.section == 8{
+            return 69
         }
             return UITableView.automaticDimension
         }
