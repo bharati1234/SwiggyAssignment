@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import Hero
+
+protocol FoodTableViewCellDelegate: AnyObject {
+    func didSelectFoodItem(_ foodItem: FoodItem)
+}
 
 class FoodTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var foodItems: [FoodItem] = []
-    
+    weak var delegate: FoodTableViewCellDelegate?
+
     override func awakeFromNib() {
           super.awakeFromNib()
           collectionView.register(UINib(nibName: "FoodCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FoodCollectionViewCell")
@@ -66,7 +72,6 @@ class FoodTableViewCell: UITableViewCell {
           guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCollectionViewCell", for: indexPath) as? FoodCollectionViewCell else {
               return UICollectionViewCell()
           }
-          
           let foodItem = foodItems[indexPath.row]
           cell.configure(with: foodItem)
           
@@ -77,6 +82,12 @@ class FoodTableViewCell: UITableViewCell {
   // MARK: - UICollectionView Delegate
   extension FoodTableViewCell: UICollectionViewDelegate {
       func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-          print("Food item at index \(indexPath.row) tapped: \(foodItems[indexPath.row])")
-      }
+              let selectedFoodItem = foodItems[indexPath.row]
+            
+              if let cell = collectionView.cellForItem(at: indexPath) as? FoodCollectionViewCell {
+                  let foodImageView = cell.foodImageView
+                  foodImageView?.heroID = "foodImage"
+              }
+          delegate?.didSelectFoodItem(selectedFoodItem)
+          }
   }

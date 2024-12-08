@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Hero
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

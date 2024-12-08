@@ -21,6 +21,7 @@
 		58AB497A2D055BDB00174745 /* AdvertiseImgeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AB49782D055BDB00174745 /* AdvertiseImgeTableViewCell.xib */; };
 		58AB497D2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB497B2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift */; };
 		58AB497E2D0562AC00174745 /* FilterSortButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AB497C2D0562AC00174745 /* FilterSortButtonsTableViewCell.xib */; };
+		58AB49842D05AF2B00174745 /* FoodDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB49832D05AF2B00174745 /* FoodDetailsViewController.swift */; };
 		58C590B12D04CBD4008B3C95 /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590AF2D04CBD4008B3C95 /* OfferTableViewCell.swift */; };
 		58C590B22D04CBD4008B3C95 /* OfferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590B02D04CBD4008B3C95 /* OfferTableViewCell.xib */; };
 		58C590B52D04CC5F008B3C95 /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590B32D04CC5F008B3C95 /* OfferCollectionViewCell.swift */; };
@@ -33,6 +34,7 @@
 		58C590C32D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590C12D04DA8E008B3C95 /* FoodTypeCollectionViewCell.xib */; };
 		58C590CA2D04EA24008B3C95 /* QuickPicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C590C82D04EA24008B3C95 /* QuickPicsTableViewCell.swift */; };
 		58C590CB2D04EA24008B3C95 /* QuickPicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590C92D04EA24008B3C95 /* QuickPicsTableViewCell.xib */; };
+		58D5C2502D05BEF800B7395E /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 58D5C24F2D05BEF800B7395E /* Hero */; };
 		58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */; };
 		58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */; };
 		58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */; };
@@ -71,6 +73,7 @@
 		58AB49782D055BDB00174745 /* AdvertiseImgeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertiseImgeTableViewCell.xib; sourceTree = "<group>"; };
 		58AB497B2D0562AC00174745 /* FilterSortButtonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSortButtonsTableViewCell.swift; sourceTree = "<group>"; };
 		58AB497C2D0562AC00174745 /* FilterSortButtonsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterSortButtonsTableViewCell.xib; sourceTree = "<group>"; };
+		58AB49832D05AF2B00174745 /* FoodDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsViewController.swift; sourceTree = "<group>"; };
 		58C590AF2D04CBD4008B3C95 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
 		58C590B02D04CBD4008B3C95 /* OfferTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferTableViewCell.xib; sourceTree = "<group>"; };
 		58C590B32D04CC5F008B3C95 /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D5C2502D05BEF800B7395E /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				328171732D033E55000D8938 /* HomeViewController.swift */,
+				58AB49832D05AF2B00174745 /* FoodDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +259,9 @@
 			dependencies = (
 			);
 			name = SwiggyAssignment;
+			packageProductDependencies = (
+				58D5C24F2D05BEF800B7395E /* Hero */,
+			);
 			productName = SwiggyAssignment;
 			productReference = 3281716C2D033E55000D8938 /* SwiggyAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +290,9 @@
 				Base,
 			);
 			mainGroup = 328171632D033E54000D8938;
+			packageReferences = (
+				58D5C24E2D05BEF800B7395E /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = 3281716D2D033E55000D8938 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +350,7 @@
 				58AB49752D0557C300174745 /* SeeMoreRestaurantTableViewCell.swift in Sources */,
 				58C590BE2D04D971008B3C95 /* FoodTypeTableViewCell.swift in Sources */,
 				58C590C22D04DA8E008B3C95 /* FoodTypeCollectionViewCell.swift in Sources */,
+				58AB49842D05AF2B00174745 /* FoodDetailsViewController.swift in Sources */,
 				58C590B12D04CBD4008B3C95 /* OfferTableViewCell.swift in Sources */,
 				58DFD8782D04A51700112FA4 /* FoodTableViewCell.swift in Sources */,
 				58AB49792D055BDB00174745 /* AdvertiseImgeTableViewCell.swift in Sources */,
@@ -575,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58D5C24E2D05BEF800B7395E /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58D5C24F2D05BEF800B7395E /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58D5C24E2D05BEF800B7395E /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 328171642D033E54000D8938 /* Project object */;
 }

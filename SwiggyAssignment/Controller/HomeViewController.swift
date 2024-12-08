@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 class HomeViewController: UIViewController {
 
@@ -43,6 +44,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        hero.isEnabled = true
+
     }
     
     private func setupTableView() {
@@ -95,6 +98,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "FoodTableViewCell", for: indexPath) as? FoodTableViewCell else {
                 return UITableViewCell()
             }
+            cell.delegate = self
+
             return cell
             
         case .offers:
@@ -170,5 +175,15 @@ extension HomeViewController {
         } else if scrollView.contentOffset.y >= sectionHeaderHeight {
             scrollView.contentInset = UIEdgeInsets(top: -sectionHeaderHeight, left: 0, bottom: 0, right: 0)
         }
+    }
+}
+extension HomeViewController:FoodTableViewCellDelegate {
+    func didSelectFoodItem(_ foodItem: FoodItem) {
+               if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FoodDetailsViewController") as? FoodDetailsViewController {
+                   viewController.hero.isEnabled = true
+                   viewController.hero.modalAnimationType = .zoom
+                   viewController.foodItem = foodItem
+                    present(viewController, animated: true, completion: nil)
+               }
     }
 }
