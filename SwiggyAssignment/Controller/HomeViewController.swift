@@ -41,11 +41,13 @@ class HomeViewController: UIViewController {
         }
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         hero.isEnabled = true
         navigationController?.setNavigationBarHidden(true, animated: false)
+        addPullToRefresh()
     }
     
     private func setupTableView() {
@@ -65,6 +67,24 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: "AdvertiseImgeTableViewCell", bundle: nil), forCellReuseIdentifier: "AdvertiseImgeTableViewCell")
         tableView.register(UINib(nibName: "FilterSortButtonsTableViewCell", bundle: nil), forCellReuseIdentifier: "FilterSortButtonsTableViewCell")
     }
+    private func addPullToRefresh() {
+           let refreshControl = UIRefreshControl()
+           refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+           tableView.refreshControl = refreshControl
+       }
+    @objc private func refreshData(_ sender: UIRefreshControl) {
+           reloadData {
+               sender.endRefreshing()
+           }
+       }
+    private func reloadData(completion: (() -> Void)? = nil) {
+
+           DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+               self.tableView.reloadData()
+               completion?()
+           }
+       }
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {

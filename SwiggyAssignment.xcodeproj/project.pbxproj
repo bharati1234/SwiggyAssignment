@@ -36,7 +36,6 @@
 		58C590CB2D04EA24008B3C95 /* QuickPicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C590C92D04EA24008B3C95 /* QuickPicsTableViewCell.xib */; };
 		58D5C2502D05BEF800B7395E /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 58D5C24F2D05BEF800B7395E /* Hero */; };
 		58D5C2522D05CFF200B7395E /* Extesnsion + UIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5C2512D05CFF200B7395E /* Extesnsion + UIVIew.swift */; };
-		58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */; };
 		58DFD85C2D04618200112FA4 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */; };
 		58DFD85E2D0461B200112FA4 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */; };
 		58DFD85F2D04674500112FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3281717A2D033E56000D8938 /* LaunchScreen.storyboard */; };
@@ -88,7 +87,6 @@
 		58C590C82D04EA24008B3C95 /* QuickPicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPicsTableViewCell.swift; sourceTree = "<group>"; };
 		58C590C92D04EA24008B3C95 /* QuickPicsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickPicsTableViewCell.xib; sourceTree = "<group>"; };
 		58D5C2512D05CFF200B7395E /* Extesnsion + UIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extesnsion + UIVIew.swift"; sourceTree = "<group>"; };
-		58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarWithMic.swift; sourceTree = "<group>"; };
 		58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
 		58DFD8612D04779C00112FA4 /* bannerSliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerSliderTableViewCell.swift; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				58C590B92D04CF35008B3C95 /* New Group */,
-				58DFD8572D04606200112FA4 /* SearchBarWithMic.swift */,
 				58DFD85B2D04618200112FA4 /* CustomHeaderView.swift */,
 				58DFD85D2D0461B200112FA4 /* CustomHeaderView.xib */,
 				58DFD8722D048E0900112FA4 /* CustomButton.swift */,
@@ -362,7 +359,6 @@
 				58DFD8732D048E0900112FA4 /* CustomButton.swift in Sources */,
 				58E235252D04BFF4009DF376 /* FoodItemModel.swift in Sources */,
 				58C590B82D04CD81008B3C95 /* OfferModel.swift in Sources */,
-				58DFD8582D04606200112FA4 /* SearchBarWithMic.swift in Sources */,
 				328171702D033E55000D8938 /* AppDelegate.swift in Sources */,
 				328171722D033E55000D8938 /* SceneDelegate.swift in Sources */,
 				58DFD86C2D048BBE00112FA4 /* ButtonsTableViewCell.swift in Sources */,
@@ -518,21 +514,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5D6X9A3KM9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiggyAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tets.SwiggyAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.customer.Gulf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -547,21 +543,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5D6X9A3KM9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiggyAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tets.SwiggyAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.customer.Gulf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
